@@ -31,7 +31,7 @@
     	    psmt.setString(5,t5);
     	    psmt.setString(6,t6);
     	   	psmt.executeQuery();
-    	   	PreparedStatement psm=conn.prepareStatement("insert into tranhistory(account_no,amount,payment_method,payment_type) values (?,?,'Cash','Deposit')");
+    	   	PreparedStatement psm=conn.prepareStatement("insert into tranhistory(account_no,amount,payment_method,payment_type) values (?,?,'Cash','Create Deposit')");
     	    psm.setString(1,t1);
     	    psm.setString(2,t5);
     	   	psm.executeQuery();
@@ -160,4 +160,5 @@
      </table>
      <%}%>
 </body>
+
 </html>
